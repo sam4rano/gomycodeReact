@@ -1,95 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
-
-    <link rel="icon" href="devchallenges.png" />
-
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins&family=Space+Mono&display=swap"
       rel="stylesheet"
     />
-
-    <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
+    <link rel="stylesheet" href="style.css" />
+    <title>Team Page</title>
   </head>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      padding: 12px;
+    }
+    header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+    }
+    .home {
+      font-family: "PT serif";
+      font-weight: 700;
+      font-size: 36px;
+      line-height: 40px;
+    }
+    .home_one {
+      font-family: "Poppin";
+      font-size: 18px;
+      font-size: 600;
+      line-height: 27px;
+    }
+    .home_two {
+      font-family: "Poppin";
+      width: 439px;
+      height: 87px;
+      font-size: 18px;
+      font-size: 400;
+      line-height: 27px;
+    }
+  </style>
   <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
+    <header>
+      <div class="home">The creative crew</div>
+      <div>
+        <h2 class="home_one">Who we are</h2>
+        <h2 class="home_two">
+          We are team of creatively diverse. driven. innovative individuals
+          working in various locations from the world.
+        </h2>
       </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
+    </header>
+    <main>
+      <div><img src="./image/photo1.png" alt="img_1" />
+		<img src="./image/photo2.png" alt="img_2" />
+		<img src="./image/photo3.png" alt="img_3" />
+	</div>
+      <div><img src="./image/photo4.png" alt="img_4" />
+		<img src="./image/photo5.png" alt="img_5" />
+		<img src="./image/photo6.png" alt="img_6" />
+	</div>
+    </main>
   </body>
 </html>
