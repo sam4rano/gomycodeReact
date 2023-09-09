@@ -45,27 +45,110 @@
       font-size: 400;
       line-height: 27px;
     }
+	.img_container_one, .img_container_two {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		padding-bottom: 20px;
+
+	}
+	h2 {
+		/* writing-mode: vertical-lr;
+		position: absolute;
+		text-transform: ; */
+		display: flex;
+		
+		justify-self: end;
+		
+	}
+	img {
+		width: 238px;
+		max-width: 400px;
+		height: auto;
+
+	}
+	h2 {
+		writing-mode: vertical-lr;
+	}
+
+	.img_one,
+	.img_two,
+	.img_three,
+	.img_four,
+	.img_five,
+	.img_six {
+		width:264px;
+		height:auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
   </style>
   <body>
     <header>
       <div class="home">The creative crew</div>
       <div>
-        <h2 class="home_one">Who we are</h2>
-        <h2 class="home_two">
+        <h3 class="home_one">Who we are</h3>
+        <p class="home_two">
           We are team of creatively diverse. driven. innovative individuals
           working in various locations from the world.
-        </h2>
+        </p>
       </div>
     </header>
-    <main>
-      <div><img src="./image/photo1.png" alt="img_1" />
-		<img src="./image/photo2.png" alt="img_2" />
-		<img src="./image/photo3.png" alt="img_3" />
+    <main class="main_container">
+		<div class="img_container_one">
+			<div class="img_one">
+				<div>
+					<img src="./image/photo1.png" alt="img_1" />
+					<h1>Bill Mahoney</h1>
+				</div>
+				<h2 class="">Product owner</h2>
+			</div>
+			<div class="img_two">
+				<div>
+					<img src="./image/photo2.png" alt="img_2" />
+					<h1>Saba Cabrera </h1>
+				</div>
+				<h2>Art Director</h2>
+			</div>
+			<div class="img_three">
+				
+				<div>
+					<img src="./image/photo3.png" alt="img_3" />
+					<h1>Shae Le</h1>
+				</div>
+				<h2>Tech Lead</h2>
+			</div>
+		</div>
+		<div class="img_container_two">
+			<div class="img_four">
+				<div>
+
+					<img src="./image/photo4.png" alt="img_14" />
+					<h1>Skylah Lu</h1>
+				</div>
+				<h2>UX Designer</h2>
+			</div>
+			<div class="img_five">
+				<div>
+
+					<img src="./image/photo5.png" alt="img_5" />
+					<h1>Griff Richards</h1>
+				</div>
+				<h2>Developer</h2>
+			</div>
+			<div class="img_six">
+				<div>
+
+					<img src="./image/photo6.png" alt="img_6" />
+					<h1>Stan John</h1>
+				</div>
+				<h2>Developer</h2>
+			</div>
+		</div>
+		
 	</div>
-      <div><img src="./image/photo4.png" alt="img_4" />
-		<img src="./image/photo5.png" alt="img_5" />
-		<img src="./image/photo6.png" alt="img_6" />
-	</div>
+
     </main>
   </body>
 </html>
