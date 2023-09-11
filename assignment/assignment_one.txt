@@ -1,0 +1,43 @@
+1. Algorithm for First Task: Count Words, Vowels, and Characters in a Sentence
+
+Initialize wordCount, vowelCount, and charCount to 0
+Read inputSentence which ends with a period
+
+For each character in inputSentence:
+    If character is a space:
+        Increment wordCount by 1
+    If character is a vowel (a, e, i, o, u):
+        Increment vowelCount by 1
+    Increment charCount by 1
+
+Output wordCount as the number of words
+Output vowelCount as the number of vowels
+Output charCount as the total characters in the sentence
+
+2. Algorithm for Second Task: Sum of Distinct Elements from Two Sets
+Given two sets of elements, find the sum of all distinct elements from the set. In other words, 
+find the sum of all elements which are present in either of the given set.
+
+Example:
+Set 1 : [3, 1, 7, 9], Set 2: [2, 4, 1, 9, 3]
+Output: 13 (distinct elements 4, 7, 2 )
+
+Initialize an empty list result
+Initialize set1 and set2 with the given sets of elements
+
+For each element in set1:
+    If element is not in set2:
+        Add element to result
+    Remove element from set1
+
+For each element in set2:
+    If element is not in set1:
+        Add element to result
+    Remove element from set2
+
+Initialize sum to 0
+For each element in result:
+    Add element to sum
+
+Output sum as the sum of distinct elements from both sets
+
