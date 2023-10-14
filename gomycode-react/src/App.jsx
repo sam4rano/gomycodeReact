@@ -1,6 +1,7 @@
 
 import "./App.css";
 import Introduction from "./component/Introduction";
+import NavbarContainer from "./component/NavbarContainer";
 
 const App = () => {
   // const userName = "John Doe";
@@ -24,10 +25,9 @@ const App = () => {
 
   return (
     <div className="app">
+      <NavbarContainer />
       <Introduction text="I am a Machine learning engineer" />
-      <Introduction text="I am a QA engineer" />
-      <Introduction text="I am a Backend engineer" />
-      
+
     </div>
   );
 };
