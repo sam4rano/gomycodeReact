@@ -19,7 +19,7 @@ const App = () => {
    
       {products.map((item, index) => (
         <Card key={index} className="d-flex">
-          <Card.Body className="d-flex justify-content-between ">
+          <Card.Body className="d-flex justify-content-between py-5">
               <Image image={item.image} />
               <Card.Title variant="primary"><Name name={item.name} /></Card.Title>
               <Price price={item.price} />
